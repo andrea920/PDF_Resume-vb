@@ -20,4 +20,3 @@ C:\Users\andre\source\repos\PDF_Resume-vb\PDF_Resume-vb\bin\Debug\net5.0-windows
 C:\Users\andre\source\repos\PDF_Resume-vb\PDF_Resume-vb\bin\Debug\net5.0-windows\itextsharp.dll
 C:\Users\andre\source\repos\PDF_Resume-vb\PDF_Resume-vb\bin\Debug\net5.0-windows\itextsharp.pdfa.dll
 C:\Users\andre\source\repos\PDF_Resume-vb\PDF_Resume-vb\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-C:\Users\andre\source\repos\PDF_Resume-vb\PDF_Resume-vb\obj\Debug\net5.0-windows\PDF_Resume-vb.vbproj.CopyComplete

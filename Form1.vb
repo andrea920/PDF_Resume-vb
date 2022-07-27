@@ -4,6 +4,13 @@ Imports iTextSharp.text.pdf
 Imports Newtonsoft.Json
 Public Class Form1
     Private Sub BtnCreatePDF_Click(sender As Object, e As EventArgs) Handles BtnCreatePDF.Click
+        Dim CreatedPDF As Document = New Document
+        PdfWriter.GetInstance(CreatedPDF, New FileStream("Perido, Ma. Andrea.pdf", FileMode.Create))
+
+        CreatedPDF.Open()
+        CreatedPDF.Add(New Paragraph("Hello I'm Andrea"))
+        CreatedPDF.Close()
+        MsgBox("Resume Created (PDF)")
 
     End Sub
 
