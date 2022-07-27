@@ -22,33 +22,33 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnCreatePDF = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnCreatePDF = New System.Windows.Forms.Button()
+        Me.BtnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'btnCreatePDF
+        'BtnCreatePDF
         '
-        Me.btnCreatePDF.BackColor = System.Drawing.Color.DarkOrchid
-        Me.btnCreatePDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnCreatePDF.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnCreatePDF.Location = New System.Drawing.Point(124, 82)
-        Me.btnCreatePDF.Name = "btnCreatePDF"
-        Me.btnCreatePDF.Size = New System.Drawing.Size(141, 54)
-        Me.btnCreatePDF.TabIndex = 0
-        Me.btnCreatePDF.Text = "Create PDF"
-        Me.btnCreatePDF.UseVisualStyleBackColor = False
+        Me.BtnCreatePDF.BackColor = System.Drawing.Color.DarkOrchid
+        Me.BtnCreatePDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnCreatePDF.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnCreatePDF.Location = New System.Drawing.Point(124, 82)
+        Me.BtnCreatePDF.Name = "BtnCreatePDF"
+        Me.BtnCreatePDF.Size = New System.Drawing.Size(141, 54)
+        Me.BtnCreatePDF.TabIndex = 0
+        Me.BtnCreatePDF.Text = "Create PDF"
+        Me.BtnCreatePDF.UseVisualStyleBackColor = False
         '
-        'Button1
+        'BtnExit
         '
-        Me.Button1.BackColor = System.Drawing.Color.DeepPink
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.Location = New System.Drawing.Point(124, 160)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 54)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.BtnExit.BackColor = System.Drawing.Color.DeepPink
+        Me.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BtnExit.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.BtnExit.Location = New System.Drawing.Point(124, 160)
+        Me.BtnExit.Name = "BtnExit"
+        Me.BtnExit.Size = New System.Drawing.Size(141, 54)
+        Me.BtnExit.TabIndex = 0
+        Me.BtnExit.Text = "Exit"
+        Me.BtnExit.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -56,8 +56,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightCoral
         Me.ClientSize = New System.Drawing.Size(406, 275)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.btnCreatePDF)
+        Me.Controls.Add(Me.BtnExit)
+        Me.Controls.Add(Me.BtnCreatePDF)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MaximizeBox = False
         Me.Name = "Form1"
@@ -67,6 +67,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents btnCreatePDF As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnCreatePDF As Button
+    Friend WithEvents BtnExit As Button
 End Class
