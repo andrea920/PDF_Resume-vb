@@ -3,12 +3,15 @@ Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports Newtonsoft.Json
 Public Class Form1
+    Dim GetJsonFile As String = File.ReadAllText("mydetails.json")
+    Dim JsonOutput As MyDetails = JsonConvert.DeserializeObject(Of MyDetails)(GetJsonFile)
+
     Private Sub BtnCreatePDF_Click(sender As Object, e As EventArgs) Handles BtnCreatePDF.Click
         Dim CreatedPDF As Document = New Document
         PdfWriter.GetInstance(CreatedPDF, New FileStream("Perido, Ma. Andrea.pdf", FileMode.Create))
 
         CreatedPDF.Open()
-        CreatedPDF.Add(New Paragraph("Hello I'm Andrea"))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Name))
         CreatedPDF.Close()
         MsgBox("Resume Created (PDF)")
 
