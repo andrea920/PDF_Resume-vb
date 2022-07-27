@@ -22,10 +22,51 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnCreatePDF = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnCreatePDF
+        '
+        Me.btnCreatePDF.BackColor = System.Drawing.Color.DarkOrchid
+        Me.btnCreatePDF.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnCreatePDF.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCreatePDF.Location = New System.Drawing.Point(124, 82)
+        Me.btnCreatePDF.Name = "btnCreatePDF"
+        Me.btnCreatePDF.Size = New System.Drawing.Size(141, 54)
+        Me.btnCreatePDF.TabIndex = 0
+        Me.btnCreatePDF.Text = "Create PDF"
+        Me.btnCreatePDF.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.DeepPink
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(124, 160)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(141, 54)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Exit"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.BackColor = System.Drawing.Color.LightCoral
+        Me.ClientSize = New System.Drawing.Size(406, 275)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnCreatePDF)
+        Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MaximizeBox = False
+        Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Resume Creator (PDF)"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnCreatePDF As Button
+    Friend WithEvents Button1 As Button
 End Class
