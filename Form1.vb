@@ -12,6 +12,14 @@ Public Class Form1
 
         CreatedPDF.Open()
         CreatedPDF.Add(New Paragraph(JsonOutput.Name))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Objectives))
+        CreatedPDF.Add(New Paragraph(JsonOutput.ContactNumber))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Address))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Age))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Email))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Education))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Skills))
+        CreatedPDF.Add(New Paragraph(JsonOutput.Name2))
         CreatedPDF.Close()
         MsgBox("Resume Created (PDF)")
 
