@@ -20,4 +20,16 @@ Public Class Form1
             Application.Exit()
         End If
     End Sub
+    Public Class MyDetails
+        Public Property Name As String
+        Public Property Objectives As String
+        Public Property ContactNumber As String
+        Public Property Address As String
+        Public Property Age As String
+        Public Property Email As String
+        Public Property Education As String
+        Public Property Skills As String
+        Public Property Name2 As String
+    End Class
+
 End Class
