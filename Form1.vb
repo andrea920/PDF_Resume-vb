@@ -108,6 +108,7 @@ Public Class Form1
         End If
     End Sub
     Public Class MyDetails
+        Public Property MyPicture As String
         Public Property Name As String
         Public Property Objectives As String
         Public Property ContactNumber As String
