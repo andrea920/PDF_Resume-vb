@@ -12,6 +12,7 @@ Public Class Form1
         Dim CreatedPDF As Document = New Document()
         PdfWriter.GetInstance(CreatedPDF, New FileStream("Perido, Ma. Andrea.pdf", FileMode.Create))
         CreatedPDF.Open()
+        Dim Mypic As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(JsonOutput.MyPicture)
         Dim Name As Paragraph = New Paragraph(JsonOutput.Name & vbLf & vbLf)
 
         Dim Obj As Paragraph = New Paragraph("OBJECTIVES" & vbLf & vbLf)
@@ -35,7 +36,7 @@ Public Class Form1
 
         Dim Name2 As Paragraph = New Paragraph(JsonOutput.Name2)
 
-
+        CreatedPDF.Add(Mypic)
 
         Name.Font.Size = 30
         Name.Alignment = Element.ALIGN_CENTER
