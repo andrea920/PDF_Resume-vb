@@ -7,7 +7,6 @@ Public Class Form1
     Dim GetJsonFile As String = File.ReadAllText("mydetails.json")
     Dim JsonOutput As MyDetails = JsonConvert.DeserializeObject(Of MyDetails)(GetJsonFile)
 
-
     Private Sub BtnCreatePDF_Click(sender As Object, e As EventArgs) Handles BtnCreatePDF.Click
         Dim CreatedPDF As Document = New Document()
         PdfWriter.GetInstance(CreatedPDF, New FileStream("Perido, Ma. Andrea.pdf", FileMode.Create))
@@ -36,6 +35,8 @@ Public Class Form1
 
         Dim Name2 As Paragraph = New Paragraph(JsonOutput.Name2)
 
+        Mypic.ScalePercent(10.0F)
+        Mypic.Alignment = Element.ALIGN_CENTER
         CreatedPDF.Add(Mypic)
 
         Name.Font.Size = 30
